@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(images/yu.png);
+    background-image: url(yu.png);
     background-size: cover;
 }
 
@@ -65,4 +65,5 @@ nav a:hover {
 }
 .logo {
     align-items: center;
+
 }
