@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bhutan Job Portal</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(to right, #e0f2ff, #ffffff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .contact-container {
+            background-color: white;
+            padding: 30px 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        h2 {
+            color: #0b3d91;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #0b3d91;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff6b00;
+        }
+
+        iframe {
+            width: 100%;
+            height: 200px;
+            border: 0;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+
+        <!-- Optional Simple Contact Form -->
+        <form action="mailto:info@bhutanjobportal.bt" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+        <!-- Contact Info -->
+        <p>Email: info@bhutanjobportal.bt</p>
+        <p>Phone: +975-XX-XXXXXXX</p>
+        <p>Address: Thimphu, Bhutan</p>
+
+        <!-- Optional Google Map -->
+        <iframe><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.0525480210013!2d89.642101074566!3d27.467623376320823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e1946d5acf5c05%3A0x1715519da0ff12f1!2sLungtenzampa%20Middle%20Secondary%20School!5e0!3m2!1sen!2sbt!4v1766639525406!5m2!1sen!2sbt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2025 Bhutan Job Portal | All Rights Reserved
+        </footer>
+    </div>
+</body>
+</html>

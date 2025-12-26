@@ -1,0 +1,205 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn - Interview Preparation</title>
+<style>
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #0b3d91;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.learn-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #0b3d91;
+    margin-bottom: 30px;
+}
+
+/* Section */
+section {
+    margin-bottom: 40px;
+}
+
+/* Collapsible */
+.collapsible {
+    background-color: #0b3d91;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.active, .collapsible:hover {
+    background-color: #ff6b00;
+}
+
+.content {
+    padding: 0 15px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Video */
+.content iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Tips list */
+ul {
+    margin-left: 20px;
+}
+
+/* Quiz */
+.quiz-question {
+    margin-bottom: 10px;
+}
+.quiz-question button {
+    margin-top: 5px;
+    padding: 8px 12px;
+    background-color: #0b3d91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.quiz-question button:hover {
+    background-color: #ff6b00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #555;
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="learn.html">Learn</a>
+</nav>
+
+<div class="learn-container">
+    <h1>Interview Learning Hub</h1>
+
+    <!-- Video Section -->
+    <section>
+        <h2>Video Tutorials</h2>
+        <button class="collapsible">Interview Basics</button>
+        <div class="content">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+            <p>Learn how to introduce yourself and answer basic interview questions confidently.</p>
+        </div>
+
+        <button class="collapsible">Common Questions</button>
+        <div class="content">
+            <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" allowfullscreen></iframe>
+            <p>Watch examples of common interview questions and how to answer them effectively.</p>
+        </div>
+
+        <button class="collapsible">Body Language & Confidence</button>
+        <div class="content">
+            <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" allowfullscreen></iframe>
+            <p>Tips on maintaining positive body language and appearing confident in interviews.</p>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section>
+        <h2>Quick Interview Tips</h2>
+        <button class="collapsible">Research & Preparation</button>
+        <div class="content">
+            <ul>
+                <li>Research the company and role.</li>
+                <li>Prepare answers for common questions.</li>
+            </ul>
+        </div>
+
+        <button class="collapsible">Presentation & Communication</button>
+        <div class="content">
+            <ul>
+                <li>Dress professionally and be punctual.</li>
+                <li>Maintain good posture and eye contact.</li>
+                <li>Listen carefully and speak clearly.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Mini Quiz Section -->
+    <section>
+        <h2>Self-Assessment Quiz</h2>
+        <div class="quiz-question">
+            <p>Q1: Should you research the company before an interview?</p>
+            <button onclick="alert('Correct! Always research the company.')">Yes</button>
+            <button onclick="alert('Incorrect. Research is essential.')">No</button>
+        </div>
+        <div class="quiz-question">
+            <p>Q2: Is body language important in interviews?</p>
+            <button onclick="alert('Correct! Body language creates a strong impression.')">Yes</button>
+            <button onclick="alert('Incorrect. Body language matters.')">No</button>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Bhutan Job Portal | All Rights Reserved
+    </footer>
+</div>
+
+<script>
+// Collapsible sections
+const collapsibles = document.querySelectorAll(".collapsible");
+collapsibles.forEach(button => {
+    button.addEventListener("click", function() {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        content.style.display = (content.style.display === "block") ? "none" : "block";
+    });
+});
+</script>
+
+</body>
+</html>
